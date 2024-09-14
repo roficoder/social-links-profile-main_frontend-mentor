@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: "Inter", system-ui;
+    background-color: var(--grey-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    background-color: white;
+    width: 300px;
+    background-color: var(--grey-800);
+    padding: 2em 1.5em;
+    border-radius: 10px;
+}
+
+.profile-section {
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5em;
+}
+
+.profile-section .profile-pic {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-pic img {
+    width: 100%;
+}
+
+.profile-section .profile-info {
+    text-align: center;
+    color: white
+}
+
+.profile-info h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.profile-section .profile-desc {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.profile-info .profile-info-location {
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+}
+
+.social-links li {
+    background-color: var(--grey-700);
+    padding: 1em 0.5em;
+    border-radius: 8px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+}
